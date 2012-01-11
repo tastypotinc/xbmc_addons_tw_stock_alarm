@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.test"
+       name="test"
+       version="0.0.0"
+       provider-name="">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+   </requires>
+
+  <extension point="xbmc.python.script"
+            library="test.py">
+  </extension>
+  <extension point="xbmc.service" library="test.py" start="startup|login"/>
+  <extension point="xbmc.addon.metadata">
+    <summary></summary>
+    <description></description>
+	<platform>all</platform>
+  </extension>
+  <control type="label">
+    <description>test</description>
+    <posx>60</posx>
+    <posy>60</posy>
+    <width>200</width>
+    <height>400</height>
+    <font>font12_title</font>
+    <label>int.</label>
+    <align>center</align>
+    <textcolor>AADDDDDD</textcolor>
+  </control>
+</addon>
