@@ -16,15 +16,4 @@
     <description></description>
 	<platform>all</platform>
   </extension>
-  <control type="label">
-    <description>test</description>
-    <posx>60</posx>
-    <posy>60</posy>
-    <width>200</width>
-    <height>400</height>
-    <font>font12_title</font>
-    <label>int.</label>
-    <align>center</align>
-    <textcolor>AADDDDDD</textcolor>
-  </control>
 </addon>
