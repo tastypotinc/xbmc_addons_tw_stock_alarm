@@ -37,7 +37,7 @@ if count > 0:
              else:
                xbmc.executebuiltin("Notifications(%s, %s, %i, %s)" % ("4108", price+'      '+percent+'%', 10000, imagelink_up))
 else:
-        xbmc.executebuiltin("AlarmClock(test, RunScript(script.test, alarm=true), 1, loop)")
+        xbmc.executebuiltin("AlarmClock(test, RunScript(script.test, alarm=true), 10, loop)")
 
   
 

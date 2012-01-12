@@ -1,2 +1,7 @@
 這是我第一隻xbmc addons
 單純用來測試 和自己方便使用做的
+
+** how to use
+重新命名資料夾為script.test
+將資料夾移到xbmc安裝的目錄下的addons
+出現的間隔時間可在test.py裡面調整
