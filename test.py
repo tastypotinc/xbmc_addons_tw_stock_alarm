@@ -14,11 +14,13 @@ def getPrice(url):
   request = urllib2.Request(url)
   response = urllib2.urlopen(request)
   the_page = response.read()
-  #print the_page
+  print the_page
   match = re.compile('</td><td align="right" class="even " width="20%">(.+?)</td>').findall(the_page)
   global price
   price = match[0]
-  match2 = re.compile('</td><td align="right" class="odd  p" width="20%">(.+?)</td>').findall(the_page)
+  match2 = re.compile('</td><td align="right" class="odd  o" width="20%">(.+?)</td>').findall(the_page)
+  if len(match2) <1:
+    match2 = re.compile('</td><td align="right" class="odd  p" width="20%">(.+?)</td>').findall(the_page)
   global percent
   percent = match2[0]
   return match[0]
