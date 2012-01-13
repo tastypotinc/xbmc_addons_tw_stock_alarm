@@ -33,11 +33,11 @@ if count > 0:
            if hour < 14:
              si = getPrice("http://tw.m.yahoo.com/w/twstock/index_single.php?&stock=4108")
              if "-" in percent:
-               xbmc.executebuiltin("Notifications(%s, %s, %i, %s)" % ("4108", price+'      '+percent+'%', 10000, imagelink_down))
+               xbmc.executebuiltin("Notification(%s, %s, %i, %s)" % ("4108", price+'      '+percent+'%', 10000, imagelink_down))
              else:
-               xbmc.executebuiltin("Notifications(%s, %s, %i, %s)" % ("4108", price+'      '+percent+'%', 10000, imagelink_up))
+               xbmc.executebuiltin("Notification(%s, %s, %i, %s)" % ("4108", price+'      '+percent+'%', 10000, imagelink_up))
 else:
-        xbmc.executebuiltin("AlarmClock(test, RunScript(script.test, alarm=true), 10, loop)")
+        xbmc.executebuiltin("AlarmClock(test, RunScript(script.test, alarm=true), 1, loop)")
 
   
 
